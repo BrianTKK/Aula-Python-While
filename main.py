@@ -1,7 +1,14 @@
-valor = 1
-fator = 2
+opcao = -1
 
-while valor <= 20:
-    print (valor)
-    valor = valor * fator
-    
+
+
+while opcao != 0:
+    opcao = int(input("Informe a opcao: "))
+    match opcao:
+        case 1:
+            print("opcao 1")
+        case 2:
+            print("opcao 2")
+        case _:
+            if opcao != 0:
+                print("opcao invalida")
